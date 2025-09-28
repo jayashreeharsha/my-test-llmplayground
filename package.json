@@ -1,0 +1,36 @@
+{
+  "name": "llm-playground",
+  "version": "1.0.0",
+  "description": "A streamlined LLM playground interface for testing and experimenting with language models",
+  "main": "index.html",
+  "scripts": {
+    "dev": "npx http-server -p 3000",
+    "build": "echo 'Static site - no build step required'",
+    "start": "npx http-server -p 8080",
+    "deploy": "vercel --prod"
+  },
+  "keywords": [
+    "llm",
+    "playground",
+    "ai",
+    "chatbot",
+    "interface",
+    "frontend",
+    "javascript",
+    "html",
+    "css"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourusername/llm-playground.git"
+  },
+  "homepage": "https://your-llm-playground.vercel.app",
+  "devDependencies": {
+    "http-server": "^14.1.1"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  }
+}

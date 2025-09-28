@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LLM Playground</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="app-container">
+        <!-- Sidebar -->
+        <div class="sidebar" id="sidebar">
+            <div class="sidebar-header">
+                <button class="new-chat-btn" onclick="newChat()">
+                    <i class="fas fa-plus"></i>
+                    New chat
+                </button>
+            </div>
+            
+            <div class="chat-history">
+                <div class="chat-item active">
+                    <i class="fas fa-message"></i>
+                    <span>What are you working on?</span>
+                </div>
+            </div>
+            
+            <div class="sidebar-footer">
+                <div class="model-settings">
+                    <h3>Model Settings</h3>
+                    
+                    <div class="setting-group">
+                        <label for="model-select">Model:</label>
+                        <select id="model-select">
+                            <option value="gpt-4">GPT-4</option>
+                            <option value="gpt-3.5-turbo">GPT-3.5 Turbo</option>
+                            <option value="claude-3">Claude 3</option>
+                        </select>
+                    </div>
+                    
+                    <div class="setting-group">
+                        <label for="temperature">Temperature: <span id="temp-value">0.7</span></label>
+                        <input type="range" id="temperature" min="0" max="2" step="0.1" value="0.7">
+                    </div>
+                    
+                    <div class="setting-group">
+                        <label for="max-tokens">Max Tokens: <span id="tokens-value">2048</span></label>
+                        <input type="range" id="max-tokens" min="1" max="4096" step="1" value="2048">
+                    </div>
+                    
+                    <div class="setting-group">
+                        <label for="top-p">Top P: <span id="top-p-value">1.0</span></label>
+                        <input type="range" id="top-p" min="0" max="1" step="0.1" value="1.0">
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Main Content -->
+        <div class="main-content">
+            <div class="chat-header">
+                <button class="sidebar-toggle" onclick="toggleSidebar()">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <h1>LLM Playground</h1>
+            </div>
+            
+            <div class="chat-container" id="chat-container">
+                <div class="welcome-message">
+                    <h2>What are you working on?</h2>
+                    <p>Start a conversation with the AI assistant</p>
+                </div>
+            </div>
+            
+            <div class="input-container">
+                <div class="input-wrapper">
+                    <textarea 
+                        id="message-input" 
+                        placeholder="Ask anything..." 
+                        rows="1"
+                        onkeydown="handleKeyDown(event)"
+                    ></textarea>
+                    <button class="send-btn" id="send-btn" onclick="sendMessage()" disabled>
+                        <i class="fas fa-paper-plane"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
