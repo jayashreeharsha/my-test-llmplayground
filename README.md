@@ -1,5 +1,6 @@
 # LLM Playground
 
+
 A streamlined, modern interface for testing and experimenting with Large Language Models (LLMs). Built with vanilla HTML, CSS, and JavaScript for optimal performance and easy deployment.
 
 ![LLM Playground Interface](https://via.placeholder.com/800x400/10a37f/ffffff?text=LLM+Playground+Interface)
