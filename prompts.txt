@@ -1,0 +1,96 @@
+User: hello
+User: can you make right panel as toggle of /on to right and add parameters  tips for each of the setting (brief descrption and few example values) as a tool tip
+User: can you rename settings to model parameters and then keep it to right top corner just below title banner
+User: I don't model parameters toggle at all at right top corner
+User: I would like to generate curl command code or respetive model provide python sdk code when user clieks view code button. Place the view code botton on the right top corner in best possible place
+User: can you please copy code action button next Generate code button. Also user clicks view code , it should generate code based on current model parameters and with latest last message in current coversation
+User: nope. Keep View code button as it to generate code in curl and python sdk . But copy code botton should be palaced next to curl | python place holders
+User: nope . view code button should be placed in current copy code button postion and inside of it , there should be copy code as it was originally
+User: I see the copy code is visible . Move the view code button to copy code button place. then copy code action should be inside generate code window
+User: can you place a small in thin line boundary for current chat conversation area?
+User: can you align view code and model parameters toggle in straight line and add boundary around
+User: Now I would like to add voice input for prompt and voice output for model responses
+User: Nope
+User: voice functionality is not visible
+User: I don't see voice functionality added at this point
+User: still the same
+User: it is not integrated . I don't see any speech to text or text to speech functionality implemented yet
+User: It is frustrating that I don't see voice functionality reflected in UI
+User: I want voice input to be place next to attachment logo and voice ouput before 'enter' in chat input area
+User: Remove the voice button from this and move this container to top right and place it horizontally with tools for tools
+User: view code and model parameters container is partially hidden in the banner . bring down and also remove transparancey container around
+User: remove model parameters text on settings icon
+User: It is still displaying it
+User: cool. finally working
+User: Continue
+User: voice input is not working but voice output is working
+User: script.js:462 Speech recognition error: no-speech 
+ SpeechRecognitionErrorEvent 
+ isTrusted 
+ : 
+ true 
+ bubbles 
+ : 
+ false 
+ cancelBubble 
+ : 
+ false 
+ cancelable 
+ : 
+ false 
+ composed 
+ : 
+ false 
+ currentTarget 
+ : 
+ SpeechRecognition {grammars: SpeechGrammarList, lang: 'en-US', continuous: false, interimResults: true, maxAlternatives: 1, …} 
+ defaultPrevented 
+ : 
+ false 
+ error
+User: :3001/api/speech/synthesize:1  Failed to load resource: the server responded with a status of 400 (Bad Request)Understand this error 
+ script.js:967 Error in Gemini speech synthesis: Error: Speech synthesis failed 
+     at script.js:942:23 
+ (anonymous) @ script.js:967Understand this error 
+ script.js:772 Automatically stopping Gemini speech recognition after timeout 
+ :3001/api/speech/transcribe:1  Failed to load resource: the server responded with a status of 400 (Bad Request)Understand this error 
+ script.js:749 Error transcribing speech with Gemini: Error: Server returned 400: Bad Request 
+     at MediaRecorder.<anonymous> (script.js:737:27) 
+ : 
+ "no-speech" 
+ eventPhase 
+ : 
+ 0 
+ message 
+ : 
+ "" 
+ returnValue 
+ : 
+ true 
+ srcElement 
+ : 
+ SpeechRecognition {grammars: SpeechGrammarList, lang: 'en-US', continuous: false, interimResults: true, maxAlternatives: 1, …} 
+ target 
+ : 
+ SpeechRecognition {grammars: SpeechGrammarList, lang: 'en-US', continuous: false, interimResults: true, maxAlternatives: 1, …} 
+ timeStamp 
+ : 
+ 41638.699999928474 
+ type 
+ : 
+ "error" 
+ [[Prototype]] 
+ : 
+ SpeechRecognitionErrorEvent
+User: when user speaks , text is not appearing it in chat input area as user is speaking also
+User: script.js:484 Speech recognition error: no-speech 
+ SpeechRecognitionErrorEvent {isTrusted: true, error: 'no-speech', message: '', type: 'error', target: SpeechRecognition, …}
+User: :3001/api/speech/transcribe:1  Failed to load resource: the server responded with a status of 400 (Bad Request)Understand this error 
+ script.js:750 Error transcribing speech with Gemini: Error: Server returned 400: Bad Request 
+     at MediaRecorder.<anonymous> (script.js:738:27) 
+ (anonymous) @ script.js:750Understand this error
+User: what gemini model you are suing for stt and tts
+User: remove web speech button and keep tts and stt using gemini 2.5 flash lite only
+
+User: remove gemini model for stt and tts and implement using previous working method
+User: Unknown system error, please try again later.
