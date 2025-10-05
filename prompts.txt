@@ -48,6 +48,7 @@ User: script.js:462 Speech recognition error: no-speech
  : 
  false 
  error
+User: node js error to start application locally Error: Cannot find module 'express'
 User: :3001/api/speech/synthesize:1  Failed to load resource: the server responded with a status of 400 (Bad Request)Understand this error 
  script.js:967 Error in Gemini speech synthesis: Error: Speech synthesis failed 
      at script.js:942:23 
